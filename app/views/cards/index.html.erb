@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-12 col-lg-10 col-lg-offset-1">
-    
+
     <div class="header clearfix">
       <h1>Listing Cards</h1>
     </div>
@@ -33,14 +33,14 @@
               <td><%= card.attri %></td>
               <td><%= card.team %></td>
               <td><%= card.condition %></td>
-              <td><%= link_to 'Show', card_path(card) %> | </td>
-              <td> <%= link_to 'Edit', edit_card_path(card) %> | </td>
-              <td> <%= link_to 'Destroy', card_path(card),
+              <td><%= link_to 'Show', card_path(card) %></td>
+              <td><%= link_to 'Edit', edit_card_path(card) %></td>
+              <td><%= link_to 'Destroy', card_path(card),
               method: :delete, data: { confirm: 'Are you sure?' } %>
             </tr>
             <% end %>
           </table> 
-          
+
         </div>
       </div>
     </div>

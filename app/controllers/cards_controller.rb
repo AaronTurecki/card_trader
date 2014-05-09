@@ -3,6 +3,10 @@ class CardsController < ApplicationController
 def new
 end
 
+def show
+  @card = Card.find(params[:id])
+end
+
 def create
   @card = Card.new(card_params)
  
@@ -15,9 +19,7 @@ private
     params.require(:card).permit(:player_name, :manufacturer, :year, :attri, :team, :condition)
   end
 
-def show
-  @card = Card.find(params[:id])
-end
+
 
 
 end

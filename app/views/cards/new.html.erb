@@ -1,0 +1,31 @@
+<h1>New Article</h1>
+
+<%= form_for :card do |f| %>
+  <p>
+    Player Name: <%= f.text_field :player_name %>
+  </p>
+ 
+  <p>
+    Card Manufacturer: <%= f.text_field :manufacturer %>
+  </p>
+
+    <p>
+    Year: <%= f.text_field :year %>
+  </p>
+
+    <p>
+    Card Attributes: <%= f.text_field :attri %>
+  </p>
+
+    <p>
+    Team: <%= f.text_field :team %>
+  </p>
+
+    <p>
+    Condition: <%= f.text_field :condition %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

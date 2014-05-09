@@ -1,5 +1,9 @@
 class CardsController < ApplicationController
 
+def index
+  @articles = Article.all
+end
+
 def show
   @card = Card.find(params[:id])
 end

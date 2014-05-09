@@ -4,6 +4,16 @@ def index
   @cards = Card.all
 end
 
+
+
+def show
+  @card = Card.find(params[:id])
+end
+
+def new
+	@card = Card.new
+end
+
 def create
   @card = Card.new(card_params)
  
@@ -13,17 +23,6 @@ def create
     render 'new'
   end
 end
-
-def show
-  @card = Card.find(params[:id])
-end
-
-def new
-end
-
-
-
-
 
 def edit
   @card = Card.find(params[:id])
@@ -43,9 +42,6 @@ private
   def card_params
     params.require(:card).permit(:player_name, :manufacturer, :year, :attri, :team, :condition)
   end
-
-
-
 
 
 end

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_name: MyString
+  manufacturer: MyString
+  year: MyString
+  attri: MyString
+  team: MyString
+  condition: MyString
+
+two:
+  player_name: MyString
+  manufacturer: MyString
+  year: MyString
+  attri: MyString
+  team: MyString
+  condition: MyString

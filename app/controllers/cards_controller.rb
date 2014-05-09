@@ -4,17 +4,6 @@ def index
   @cards = Card.all
 end
 
-def show
-  @card = Card.find(params[:id])
-end
-
-def new
-end
-
-def edit
-  @article = Article.find(params[:id])
-end
-
 def create
   @card = Card.new(card_params)
  
@@ -23,6 +12,21 @@ def create
   else
     render 'new'
   end
+end
+
+def show
+  @card = Card.find(params[:id])
+end
+
+def new
+end
+
+
+
+
+
+def edit
+  @card = Card.find(params[:id])
 end
 
 def update

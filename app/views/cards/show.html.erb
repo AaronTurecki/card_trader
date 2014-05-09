@@ -1,0 +1,32 @@
+<p>
+  <strong>Player:</strong>
+  <%= @card.player_name %>
+</p>
+ 
+<p>
+  <strong>Card Manufacturer:</strong>
+  <%= @card.manufacturer %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @card.year %>
+</p>
+ 
+<p>
+  <strong>Card Attributes:</strong>
+  <%= @card.attri %>
+</p>
+
+<p>
+  <strong>Team:</strong>
+  <%= @card.team %>
+</p>
+ 
+<p>
+  <strong>Condition:</strong>
+  <%= @card.condition %>
+</p>
+
+<%= link_to 'Back', cards_path %>
+| <%= link_to 'Edit', edit_card_path(@card) %>

@@ -1,7 +1,7 @@
 class CardsController < ApplicationController
 
 def index
-  @articles = Article.all
+  @cards = Card.all
 end
 
 def show

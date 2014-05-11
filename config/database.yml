@@ -53,5 +53,5 @@ production:
   adapter: postgresql
   encoding: unicode
   database: card_trader_production
-  pool: 5
+  pool: 
   password:

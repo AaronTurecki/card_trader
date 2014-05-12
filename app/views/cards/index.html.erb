@@ -34,9 +34,9 @@
               <td><%= card.attri %></td>
               <td><%= card.team %></td>
               <td><%= card.condition %></td>
-              <td><%= link_to 'Show', card_path(card) %></td>
-              <td><%= link_to 'Edit', edit_card_path(card) %></td>
-              <td><%= link_to 'Destroy', card_path(card),
+              <td><%= link_to 'Show', card_path(card), class: "btn btn-large btn-primary" %></td>
+              <td><%= link_to 'Edit', edit_card_path(card), class: "btn btn-large btn-primary" %></td>
+              <td><%= link_to 'Destroy', card_path(card), class: "btn btn-large btn-primary",
               method: :delete, data: { confirm: 'Are you sure?' } %>
             </tr>
             <% end %>
